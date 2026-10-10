@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+/* JetYield design tokens: dark, instrument-panel inspired. */
+:root {
+  color-scheme: dark;
+  --bg: #06080c;
+  --surface: #0c1016;
+  --surface-2: #121821;
+  --surface-3: #18202b;
+  --border: #1e2733;
+  --border-strong: #2a3544;
+  --text: #e8ecf2;
+  --text-2: #a9b3c2;
+  --muted: #6f7a8b;
+  --accent: #5eb8ff;
+  --accent-strong: #2f9bff;
+  --amber: #f5b544;
+  /* Data-viz series (validated dark-mode categorical steps) */
+  --series-owner: #3987e5;
+  --series-empty: #d95926;
+  --series-charter: #199e70;
+  --series-mx: #4a5363;
+  /* Status (always paired with icon + label) */
+  --good: #0ca30c;
+  --warning: #fab219;
+  --serious: #ec835a;
+  --critical: #d03b3b;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-text: var(--text);
+  --color-text-2: var(--text-2);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-amber: var(--amber);
+  --color-good: var(--good);
+  --color-warning: var(--warning);
+  --color-serious: var(--serious);
+  --color-critical: var(--critical);
+  --color-series-owner: var(--series-owner);
+  --color-series-empty: var(--series-empty);
+  --color-series-charter: var(--series-charter);
+  --color-series-mx: var(--series-mx);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+body {
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.num {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(to right, rgba(94, 184, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(94, 184, 255, 0.05) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+::selection {
+  background: rgba(94, 184, 255, 0.3);
+}
+
+/* Range input styling for the what-if simulator */
+input[type="range"] {
+  accent-color: var(--accent);
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 0.45; }
+  50% { opacity: 1; }
+}
+.animate-pulse-soft {
+  animation: pulse-soft 1.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
