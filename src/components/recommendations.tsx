@@ -68,13 +68,16 @@ export function RecommendationsPanel() {
           result?.mode === "claude" ? "Prioritized by Claude · figures from the JetYield engine" : "Prioritized by the JetYield engine"
         }
         right={
-          <button
-            onClick={() => void load()}
-            disabled={loading}
-            className="inline-flex items-center gap-1.5 rounded-md border border-border px-2.5 py-1.5 text-xs text-text-2 hover:bg-surface-2 hover:text-text disabled:opacity-50"
-          >
-            <RefreshCw size={12} className={clsx(loading && "animate-spin")} aria-hidden /> Regenerate
-          </button>
+          // Results are cached server-side, so a retry only helps when the AI call failed.
+          result?.degraded || error ? (
+            <button
+              onClick={() => void load()}
+              disabled={loading}
+              className="inline-flex items-center gap-1.5 rounded-md border border-border px-2.5 py-1.5 text-xs text-text-2 hover:bg-surface-2 hover:text-text disabled:opacity-50"
+            >
+              <RefreshCw size={12} className={clsx(loading && "animate-spin")} aria-hidden /> Retry AI
+            </button>
+          ) : undefined
         }
       />
       <div className="px-5 pb-5">
