@@ -10,7 +10,7 @@ import { usd, usdCompact } from "@/lib/format";
 // Re-render daily so the hero numbers track the rolling sample data.
 export const revalidate = 86400;
 
-const REPO_URL = "https://github.com/remert/jetyield-ai";
+const REPO_URL = "https://github.com/remert/JetYield-AI";
 
 const FEATURES = [
   {
