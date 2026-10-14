@@ -48,7 +48,7 @@ function Frame({ children }: { children: React.ReactNode }) {
     <div className="min-h-dvh">
       <header className="sticky top-0 z-30 border-b border-border bg-bg/85 backdrop-blur">
         <div className="mx-auto flex h-14 max-w-[1440px] items-center gap-4 px-4 lg:px-6">
-          <Link href="/" className="shrink-0" aria-label="JetYield AI home">
+          <Link href="/" className="shrink-0" aria-label="JetYield SI home">
             <Logo />
           </Link>
           <div className="hidden h-5 w-px bg-border md:block" />
@@ -59,7 +59,7 @@ function Frame({ children }: { children: React.ReactNode }) {
           <div className="ml-auto flex items-center gap-2">
             <button
               onClick={() => setOpen(true)}
-              className="inline-flex items-center gap-2 rounded-lg bg-accent px-3.5 py-2 text-sm font-semibold text-[#04121f] transition-colors hover:bg-[#7cc6ff]"
+              className="inline-flex items-center gap-2 rounded-lg bg-accent px-3.5 py-2 text-sm font-semibold text-[#04121f] transition-colors hover:bg-[#63c8ff]"
             >
               <Sparkles size={15} aria-hidden /> Ask JetYield
             </button>

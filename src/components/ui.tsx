@@ -94,7 +94,7 @@ export function Button({
   ...rest
 }: React.ButtonHTMLAttributes<HTMLButtonElement> & { variant?: "primary" | "secondary" | "ghost" }) {
   const variants = {
-    primary: "bg-accent text-[#04121f] hover:bg-[#7cc6ff] font-semibold",
+    primary: "bg-accent text-[#04121f] hover:bg-[#63c8ff] font-semibold",
     secondary: "border border-border-strong bg-surface-2 text-text hover:bg-surface-3",
     ghost: "text-text-2 hover:text-text hover:bg-surface-2",
   };

@@ -1,15 +1,26 @@
+import Image from "next/image";
+
+// Brand mark (the "Y" with the jet) plus the name, for compact headers.
 export function Logo({ className = "" }: { className?: string }) {
   return (
     <span className={`inline-flex items-center gap-2 font-semibold tracking-tight ${className}`}>
-      <svg width="26" height="26" viewBox="0 0 32 32" aria-hidden>
-        <rect width="32" height="32" rx="8" fill="#0f1a26" stroke="#2a3544" />
-        <path d="M6 21 L26 9" stroke="#5eb8ff" strokeWidth="2.4" strokeLinecap="round" />
-        <path d="M6 24 L14 24 L18 19 L26 17" stroke="#f5b544" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
-      </svg>
-      <span>
-        JetYield<span className="text-accent"> AI</span>
-      </span>
+      <Image src="/brand/jetyield-si-mark.png" alt="" width={30} height={30} priority />
+      <span>JetYield SI</span>
     </span>
+  );
+}
+
+// Full wordmark artwork, for hero placements.
+export function Wordmark({ height = 40, className = "" }: { height?: number; className?: string }) {
+  return (
+    <Image
+      src="/brand/jetyield-si-wordmark.png"
+      alt="JetYield SI"
+      width={Math.round((height * 859) / 325)}
+      height={height}
+      className={className}
+      priority
+    />
   );
 }
 

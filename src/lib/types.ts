@@ -1,4 +1,4 @@
-// Core domain model for JetYield AI.
+// Core domain model for JetYield SI.
 // All analytics are derived from these records; nothing in the dashboard is
 // hardcoded, so uploaded CSVs flow through the same engine as the sample data.
 

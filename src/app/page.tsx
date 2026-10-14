@@ -1,7 +1,7 @@
 import { ArrowRight, Gauge, MessageSquare, Plane, Sparkles, Upload, Wrench } from "lucide-react";
 import Link from "next/link";
 import { ScoreRing } from "@/components/kpis";
-import { GithubIcon, Logo } from "@/components/logo";
+import { GithubIcon, Wordmark } from "@/components/logo";
 import { generateSampleDataset } from "@/lib/data/generate";
 import { todayISO } from "@/lib/dates";
 import { computeAnalytics } from "@/lib/engine/analytics";
@@ -58,7 +58,7 @@ export default function Home() {
       />
 
       <header className="relative mx-auto flex max-w-6xl items-center justify-between px-4 py-5 sm:px-6">
-        <Logo />
+        <Wordmark height={44} />
         <nav className="flex items-center gap-1 text-sm">
           <a href={REPO_URL} className="hidden items-center gap-1.5 rounded-lg px-3 py-2 text-text-2 hover:text-text sm:inline-flex">
             <GithubIcon size={15} /> GitHub
@@ -73,20 +73,20 @@ export default function Home() {
         <section className="grid items-center gap-12 pt-10 pb-20 lg:grid-cols-[1.1fr_1fr] lg:pt-20">
           <div>
             <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-1 text-xs text-text-2">
-              <span className="h-1.5 w-1.5 rounded-full bg-amber" aria-hidden /> Yield optimization for private aircraft
+              <span className="h-1.5 w-1.5 rounded-full bg-amber" aria-hidden /> Super Intelligence for aircraft economics
             </p>
             <h1 className="text-4xl leading-[1.05] font-semibold tracking-tight text-balance sm:text-5xl lg:text-6xl">
               Your jet costs more per hour than you think.
               <span className="text-accent"> JetYield finds the money.</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-text-2">
-              JetYield AI shows owners and small operators their true all-in cost per hour, prices the empty legs they&apos;re already flying,
+              JetYield SI shows owners and small operators their true all-in cost per hour, prices the empty legs they&apos;re already flying,
               and turns flight, cost and maintenance data into prioritized actions that lower the cost of ownership.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Link
                 href="/dashboard"
-                className="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-3 text-sm font-semibold text-[#04121f] transition-colors hover:bg-[#7cc6ff]"
+                className="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-3 text-sm font-semibold text-[#04121f] transition-colors hover:bg-[#63c8ff]"
               >
                 Open the live demo <ArrowRight size={16} aria-hidden />
               </Link>
@@ -153,7 +153,7 @@ export default function Home() {
             </div>
             <Link
               href="/dashboard"
-              className="inline-flex shrink-0 items-center gap-2 rounded-lg bg-accent px-5 py-3 text-sm font-semibold text-[#04121f] hover:bg-[#7cc6ff]"
+              className="inline-flex shrink-0 items-center gap-2 rounded-lg bg-accent px-5 py-3 text-sm font-semibold text-[#04121f] hover:bg-[#63c8ff]"
             >
               Open the demo <ArrowRight size={16} aria-hidden />
             </Link>
@@ -163,7 +163,7 @@ export default function Home() {
 
       <footer className="relative border-t border-border">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-6 text-xs text-muted sm:flex-row sm:items-center sm:justify-between sm:px-6">
-          <span>JetYield AI · demo MVP. Aircraft, tails and figures are fictional sample data.</span>
+          <span>JetYield SI · demo MVP. Aircraft, tails and figures are fictional sample data.</span>
           <a href={REPO_URL} className="hover:text-text">
             Source on GitHub
           </a>
