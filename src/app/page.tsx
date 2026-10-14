@@ -73,7 +73,7 @@ export default function Home() {
         <section className="grid items-center gap-12 pt-10 pb-20 lg:grid-cols-[1.1fr_1fr] lg:pt-20">
           <div>
             <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-1 text-xs text-text-2">
-              <span className="h-1.5 w-1.5 rounded-full bg-amber" aria-hidden /> Yield optimization for private aircraft
+              <span className="h-1.5 w-1.5 rounded-full bg-amber" aria-hidden /> Super Intelligence for aircraft economics
             </p>
             <h1 className="text-4xl leading-[1.05] font-semibold tracking-tight text-balance sm:text-5xl lg:text-6xl">
               Your jet costs more per hour than you think.
