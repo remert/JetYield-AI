@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* JetYield design tokens: dark, instrument-panel inspired. */
+/* JetYield SI design tokens: dark, instrument-panel inspired. */
 :root {
   color-scheme: dark;
   --bg: #06080c;
@@ -12,8 +12,8 @@
   --text: #e8ecf2;
   --text-2: #a9b3c2;
   --muted: #6f7a8b;
-  --accent: #5eb8ff;
-  --accent-strong: #2f9bff;
+  --accent: #1fb0ff;
+  --accent-strong: #0c69f5;
   --amber: #f5b544;
   /* Data-viz series (validated dark-mode categorical steps) */
   --series-owner: #3987e5;
@@ -77,13 +77,13 @@ body {
 
 .grid-bg {
   background-image:
-    linear-gradient(to right, rgba(94, 184, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(94, 184, 255, 0.05) 1px, transparent 1px);
+    linear-gradient(to right, rgba(31, 176, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(31, 176, 255, 0.05) 1px, transparent 1px);
   background-size: 48px 48px;
 }
 
 ::selection {
-  background: rgba(94, 184, 255, 0.3);
+  background: rgba(31, 176, 255, 0.3);
 }
 
 /* Range input styling for the what-if simulator */

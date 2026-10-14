@@ -1,8 +1,10 @@
-# JetYield AI
+<p align="center"><img src="public/brand/jetyield-si-wordmark.png" alt="JetYield SI" width="420" /></p>
+
+# JetYield SI
 
 **Your jet costs more per hour than you think. JetYield finds the money.**
 
-JetYield AI is an AI-native yield optimization tool for private aircraft owners and small operators. It shows the true all-in cost per hour, prices the empty legs an aircraft is already flying, and turns flight, cost and maintenance data into prioritized actions that lower the cost of ownership.
+JetYield SI is an AI-native yield optimization tool for private aircraft owners and small operators. It shows the true all-in cost per hour, prices the empty legs an aircraft is already flying, and turns flight, cost and maintenance data into prioritized actions that lower the cost of ownership.
 
 ![JetYield dashboard](docs/dashboard.png)
 
